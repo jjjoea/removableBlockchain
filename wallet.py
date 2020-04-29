@@ -70,9 +70,6 @@ def base58(address_hex):
 
 def sha_256(a):
     a = json.dumps(a).encode()
-    # a = re.sub("\D", "", a)
-    # a = a.encode()
-    # print(a)
     a = hashlib.sha256(a).hexdigest()
     return a
 
